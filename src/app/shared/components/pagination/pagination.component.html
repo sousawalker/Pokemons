@@ -1,0 +1,10 @@
+<nav id="pagination">
+  <ul class="pagination">
+    <li *ngIf="prev">
+    	<a href="#prev" (click)="$event.preventDefault(); prevNext(prev);">&laquo;</a>
+    </li>
+    <li *ngIf="next">
+    	<a href="#next" (click)="$event.preventDefault(); prevNext(next);">&raquo;</a>
+    </li>
+  </ul>
+</nav>

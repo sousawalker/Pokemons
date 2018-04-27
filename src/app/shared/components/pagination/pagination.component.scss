@@ -1,0 +1,29 @@
+#pagination {
+	padding-bottom: 30px;
+	
+	.pagination {
+		margin: 0;
+
+		li {
+			display: inline-block;
+
+			a {
+				position: relative;
+				display: block;
+				width: 80px;
+				text-align: center;
+				padding: 5px 0;
+				color: #000;
+				text-decoration: none;
+				outline: none;
+				background-color: #FFCB05;
+				border: 1px solid #DDAD00;
+				border-bottom: 4px solid #DDAD00;
+
+				&:hover {
+					color: #FFF;
+				}
+			}
+		}
+	}
+}
