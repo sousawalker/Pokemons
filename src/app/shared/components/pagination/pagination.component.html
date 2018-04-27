@@ -1,10 +1,10 @@
 <nav id="pagination">
   <ul class="pagination">
     <li *ngIf="prev">
-    	<a href="#prev" (click)="$event.preventDefault(); prevNext(prev);">&laquo;</a>
+    	<a routerLink="/pokemons/{{ prev | pag }}">&laquo;</a>
     </li>
     <li *ngIf="next">
-    	<a href="#next" (click)="$event.preventDefault(); prevNext(next);">&raquo;</a>
+    	<a routerLink="/pokemons/{{ next | pag }}">&raquo;</a>
     </li>
   </ul>
 </nav>
