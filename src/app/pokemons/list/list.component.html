@@ -1,0 +1,27 @@
+<div id="list">
+  <div class="container well-lg text-center" *ngIf="pokeList == null">
+    <img src="assets/loader.gif">
+  </div>
+
+  <div class="container well-lg text-center" *ngIf="pokeList != null">
+    <div class="row">
+      <div class="card col-md-3 col-xs-6" *ngFor="let poke of pokeList">
+        <div class="card">
+          <div class="sprite">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ poke.url | concatId }}.png">
+          </div>
+
+          <h5>{{ poke.name }}</h5>
+          
+          <a routerLink="/details/{{ poke.url | concatId }}">More info</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <poke-pagination [prev]="prev" [next]="next"></poke-pagination>
+      </div>
+    </div>
+  </div>
+</div>

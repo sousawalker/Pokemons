@@ -1,0 +1,49 @@
+#list {
+	.card {
+		.card {
+			background: rgba(62,90,166,1);
+			padding: 15px;
+			margin-bottom: 30px;
+			border-radius: 10px;
+
+			.sprite {
+				background-color: rgba(255,255,255,1);
+				border-radius: 5px;
+				height: 96px;
+			}
+
+			h5 {
+				font-family: 'Helvetica';
+				color: #FFF;
+				font-size: 22px;
+				text-transform: uppercase;
+			}
+
+			a {
+				position: relative;
+				display: block;
+				width: 100%;
+				text-align: center;
+				padding: 5px 0;
+				color: #000;
+				text-decoration: none;
+				outline: none;
+				background-color: #FFCB05;
+				border-radius: 5px;
+				border-bottom: 4px solid #DDAD00;
+
+				&:hover {
+					top: 4px;
+					border: 0;
+					margin-bottom: 4px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 450px) {
+		.card {
+			width: 100%;
+		}
+	}
+}
