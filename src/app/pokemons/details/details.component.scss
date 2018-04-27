@@ -1,4 +1,14 @@
 #details {
+  .logo {
+    text-align: center;
+
+    img {
+      display: inline-block;
+      width: 100%;
+      max-width: 272px;
+    }
+  }
+  
   td {
     font-family: 'Helvetica';
     color: #000;
