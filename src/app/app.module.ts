@@ -37,8 +37,7 @@ import {
   ],
   providers: [
     DetailsService,
-    ListService,
-    PagPipe
+    ListService
   ],
   bootstrap: [AppComponent]
 })
