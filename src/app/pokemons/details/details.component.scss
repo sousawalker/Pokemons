@@ -1,0 +1,29 @@
+#details {
+  td {
+    font-family: 'Helvetica';
+    color: #000;
+    font-size: 14px;
+  }
+
+  button {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+    padding: 5px 0;
+    color: #000;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    background-color: #FFCB05;
+    border-radius: 5px;
+    border-bottom: 4px solid #DDAD00;
+
+    &:hover {
+      top: 4px;
+      border: 0;
+      margin-bottom: 4px;
+    }
+  }
+}
