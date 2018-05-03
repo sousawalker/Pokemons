@@ -3,11 +3,11 @@
     <img src="assets/logo.png">
   </div>
   
-  <div class="container well-lg text-center" *ngIf="pokeDetails.name == 'Details'">
+  <div #loader class="container well-lg text-center">
     <img src="assets/loader.gif">
   </div>
 
-  <div class="container" *ngIf="pokeDetails.name != 'Details'">
+  <div class="container" *ngIf="pokeDetails">
     <h1 class="text-center">{{ pokeDetails.name | ucwords }} Details</h1>
 
     <div class="text-center">
@@ -21,16 +21,20 @@
           <td>{{ pokeDetails.name }}</td>
         </tr>
         <tr>
+          <td><b>Weight:</b></td>
+          <td>{{ pokeDetails.weight }}</td>
+        </tr>
+        <tr>
           <td><b>Height:</b></td>
           <td>{{ pokeDetails.height }}</td>
         </tr>
         <tr>
-          <td><b>Weight:</b></td>
-          <td>{{ pokeDetails.weight }}</td>
+          <td><b>Base Experience:</b></td>
+          <td>{{ pokeDetails.base_experience }}</td>
         </tr>
       </tbody>
     </table>
 
-    <button routerLink="/pokemons">Voltar</button>
+    <button routerLink="/pokemons/{{ pag }}">Voltar</button>
   </div>
 </div>
